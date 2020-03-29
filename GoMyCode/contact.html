@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#"><img src="res/logo.png" alt="logo" width="60"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="nav-link navbar-nav">
+            <a class="nav-item nav-link" href="index.html">Home </a>
+            <a class="nav-item nav-link " href="Courses.html">Courses</a>
+            <a class="nav-item nav-link active" href="Contact.html">Contact <span class="sr-only">(current)</span></a>
+          </div>
+        </div>
+      </nav>
+        <!-- <nav>
+                <div class="logo">
+                    <img src="res/logo.png" alt="logo" width="60">
+                </div>
+        
+                <ul class="navbar-links">
+                    <li class="nav-item">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Contact.html">Contact</a>
+                    </li>
+                </ul>
+        </nav> -->
+            <div class="header">
+                    <h1>Contact</h1>
+            </div>
+                <form class="contact-form">
+                <div class="input-groupe">
+                <label>Name</label> 
+                <input type="text" id="name" placeholder="Your Name" class="input-contact"> 
+            </div>
+            <div class="input-groupe">
+                <label>Track</label>
+                <select id="track" class="input-contact">
+                    <option>Web </option>
+                    <option>Game</option>
+                    <option>AI</option>
+                </select> 
+            </div>
+            <div class="input-groupe">
+                <label> Email address</label> 
+                <input type="email" id="email" placeholder="Name@example.com" class="input-contact">
+            </div>
+            <div class="input-groupe">
+                <label> Phone number</label> 
+                <input type="number" id="phone" placeholder="Your Phone Number" class="input-contact">
+            </div>
+            <div class="input-groupe">  
+                <input type="button" id="sub" value="submit" class="submit"> 
+            </div> 
+            </form>
+</body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-database.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCcmGCKFtBazCLnIg6keq35V6xmTO1kDEY",
+    authDomain: "workshop-375d3.firebaseapp.com",
+    databaseURL: "https://workshop-375d3.firebaseio.com",
+    projectId: "workshop-375d3",
+    storageBucket: "workshop-375d3.appspot.com",
+    messagingSenderId: "395143597554",
+    appId: "1:395143597554:web:28c526c8db79b65795ef6b"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+    <script src="js/db.js"></script>
+    <script src="js/main.js"></script>
+</html>

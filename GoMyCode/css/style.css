@@ -1,0 +1,241 @@
+body{
+    Background-image: Linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                    Linear-gradient(127deg, black, black 70.71%),
+                    Linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%) ; 
+
+    margin : 0 ; /* delete space ly deeyer bel page*/
+}
+
+/* navbar code for all pages*/
+
+.logo{
+    height: 100%;
+    display: flex; /*no effects but we need to set it so we can make some flexible operations (kima the one bellow)*/
+    align-items: center;/* to center the element vertically (img) try to remove these lines and see the difference */
+}
+.navbar-links{
+    /* use 
+    display: inline-block;
+    to remove the line break after every .navbar-links (ul)
+    if u don't want to use display : flex 3al nav 
+    */ 
+    margin: 0 0 0 18%; /* margin top 0 margin right 0 margin bottom 0 margin left 18%*/
+}
+
+.nav-item{
+    /*here we used inline-block to remove line-breaks after every li (.nav-item)
+    you can still use display: flex ! but not here .. use it on the container (in our case .navbar-links)
+    */
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    margin-left: 200px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.nav-link a:hover{
+
+    color: red !important;
+}
+
+/*courses page*/
+
+.header{
+    height: 450px;
+    background-image: url("https://iyadhkhalfallah.github.io/checkpointsGMC/res/webdev3.png");
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.header h1{
+    margin-top: 0;
+    font-size: 6em;
+    font-family: 'Bree Serif', serif;
+    color: #fff;
+    position: relative; 
+    top: 40%; /*remove position:relative and this property will not have any effect*/
+    text-align: center;
+    text-shadow: 5px 2px rgb(12, 11, 11);
+}
+
+.courses{
+    margin-top: 5%;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+}
+
+.row img{
+    margin-right: 4% ;
+}
+
+.courses-form{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.courses-form h4{
+    color: white;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.butt{
+    margin-bottom: 20px;
+}
+
+
+/* Contact */ 
+
+.input-groupe{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.input-contact{
+    display: block;
+    margin: 10px auto;
+    width: 25%;
+    height: 34px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-form{
+    margin: 30px;
+}
+
+.submit{
+    width: 80px;
+    height: 29px;
+    margin-top: 10px;
+    border-radius: 3px ;
+    background-color: #337ab7 ;
+    border-color: #337ab7;
+    color: white;
+}
+textArea{
+    width: 300px;
+    height: 250px;
+    max-width: 300px;
+    max-height: 250px;
+}
+
+.img1{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img2{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img3{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img4{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img5{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img6{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img7{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img8{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.img9{
+    background-image: url(../res/1.png);
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    background-size: cover;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.btnn{
+    display: none;
+}
+
+.modal{
+    max-height: 150px !important;
+}
